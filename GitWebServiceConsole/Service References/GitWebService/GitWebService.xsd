@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="GetNumber">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetNumberResponse">
+  <xs:import schemaLocation="http://localhost:63637/GitWebService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GitWebService" />
+  <xs:element name="CreateGitRepository">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="GetNumberResult" type="xs:int" />
+        <xs:element minOccurs="0" name="repositoryName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateGitRepositoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GitWebService" minOccurs="0" name="CreateGitRepositoryResult" nillable="true" type="q1:CreateGitRepositoryResponse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

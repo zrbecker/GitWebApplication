@@ -4,24 +4,25 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:63637/GitWebService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:63637/GitWebService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63637/GitWebService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GitWebService" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IGitWebService_GetNumber_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetNumber" />
+  <wsdl:message name="IGitWebService_CreateGitRepository_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateGitRepository" />
   </wsdl:message>
-  <wsdl:message name="IGitWebService_GetNumber_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetNumberResponse" />
+  <wsdl:message name="IGitWebService_CreateGitRepository_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateGitRepositoryResponse" />
   </wsdl:message>
   <wsdl:portType name="IGitWebService">
-    <wsdl:operation name="GetNumber">
-      <wsdl:input wsaw:Action="http://tempuri.org/IGitWebService/GetNumber" message="tns:IGitWebService_GetNumber_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IGitWebService/GetNumberResponse" message="tns:IGitWebService_GetNumber_OutputMessage" />
+    <wsdl:operation name="CreateGitRepository">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGitWebService/CreateGitRepository" message="tns:IGitWebService_CreateGitRepository_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGitWebService/CreateGitRepositoryResponse" message="tns:IGitWebService_CreateGitRepository_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IGitWebService" type="tns:IGitWebService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="GetNumber">
-      <soap:operation soapAction="http://tempuri.org/IGitWebService/GetNumber" style="document" />
+    <wsdl:operation name="CreateGitRepository">
+      <soap:operation soapAction="http://tempuri.org/IGitWebService/CreateGitRepository" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

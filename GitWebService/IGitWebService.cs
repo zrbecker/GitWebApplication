@@ -12,6 +12,6 @@ namespace GitWebService
     public interface IGitWebService
     {
         [OperationContract]
-        int GetNumber();
+        CreateGitRepositoryResponse CreateGitRepository(string repositoryName);
     }
 }

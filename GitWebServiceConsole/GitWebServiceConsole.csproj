@@ -77,6 +77,12 @@
     <None Include="Service References\GitWebService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\GitWebService\GitWebService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GitWebService\GitWebServiceConsole.GitWebService.CreateGitRepositoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\GitWebService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

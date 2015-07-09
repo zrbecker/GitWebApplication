@@ -25,6 +25,7 @@
     <MetadataFile FileName="GitWebService.xsd" MetadataType="Schema" ID="97b6da9e-684c-4b09-8b76-8583601f06cd" SourceId="1" SourceUrl="http://localhost:63637/GitWebService.svc?xsd=xsd0" />
     <MetadataFile FileName="GitWebService.wsdl" MetadataType="Wsdl" ID="96a16bcd-e0c2-4565-a53b-f5bb573fa040" SourceId="1" SourceUrl="http://localhost:63637/GitWebService.svc?wsdl" />
     <MetadataFile FileName="GitWebService.disco" MetadataType="Disco" ID="86598b4a-1450-4ff4-98da-037d5f4c198f" SourceId="1" SourceUrl="http://localhost:63637/GitWebService.svc?disco" />
+    <MetadataFile FileName="GitWebService2.xsd" MetadataType="Schema" ID="d1c6fcc0-2ea6-44b6-bca3-2e22a5a024e2" SourceId="1" SourceUrl="http://localhost:63637/GitWebService.svc?xsd=xsd2" />
     <MetadataFile FileName="GitWebService1.xsd" MetadataType="Schema" ID="6b33e068-16f3-423a-83ec-4dc231b6dede" SourceId="1" SourceUrl="http://localhost:63637/GitWebService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
